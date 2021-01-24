@@ -29,6 +29,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: durandj/kopia:0.7.3
+          tags: |
+            durandj/kopia:latest
+            durandj/kopia:0.7.3
           build-args: |
             KOPIA_VERSION=0.7.3
